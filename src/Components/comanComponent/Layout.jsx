@@ -3,6 +3,7 @@ import React, { useState } from 'react'
 import Footer from './footer'
 import NavBar from './navbar'
 import Sidebar from './sidebar'
+import process_management from '../../pages.jsx/process_management'
 import { Outlet } from 'react-router-dom'
 const Layout = () => {
   const [sidebarOpen, setSidebarOpen] = useState(false)

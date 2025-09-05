@@ -25,6 +25,9 @@ const Sidebar = ({ open, setOpen }) => {
             <Link to="contact" className="hover:bg-gray-600 pb-1" onClick={() => setOpen(false)}>
               Contact Support
             </Link>
+            <Link to="process_management" className="hover:bg-gray-600 pb-1" onClick={() => setOpen(false)}>
+              Process Management
+            </Link>
           </nav>
         </div>
 
