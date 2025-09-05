@@ -6,7 +6,7 @@ import Faqs from "./pages.jsx/faqs";
 import Contact from "./pages.jsx/Contact";
 import Process_management from "./pages.jsx/process_management";
 import Layout from "./Components/comanComponent/Layout";
-
+import Essential from "./pages.jsx/crm-essentials";
 function App() {
   return (
     <Router>
@@ -19,6 +19,7 @@ function App() {
             <Route path="faqs" element={<Faqs />} />
             <Route path="contact" element={<Contact />} />
             <Route path="process_management" element={<Process_management />} />
+            <Route path="crm-essential" element={<Essential />} />
 
           </Route>
         </Routes>
