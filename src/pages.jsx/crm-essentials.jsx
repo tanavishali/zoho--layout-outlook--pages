@@ -66,17 +66,19 @@
             </p>
             {/* Button */}
             <div className="mt-8">
-                <Link to="/auth/signin">
-                <motion.button
-                    whileHover={{ scale: 1.05 }}
-                    whileTap={{ scale: 0.95 }}
-                    className="inline-block px-8 py-3 text-lg font-medium rounded-2xl border 
-                    text-[#2080bd]     hover:bg-transparent hover:text-[#2080bd]
-                        transition-colors duration-300"
-                >
-                    Start Free Trial
-                </motion.button>
-                </Link>
+               <Link to="/auth/signin">
+          <motion.button
+            whileHover={{ scale: 1.05 }}
+            whileTap={{ scale: 0.95 }}
+            className="px-8 py-3 text-lg font-medium rounded-2xl shadow-md
+                       bg-[#2080bd] text-white 
+                       hover:bg-transparent hover:text-[#2080bd] hover:border-[#2080bd]
+                       border border-transparent
+                       transition-all duration-300"
+          >
+             Start Free Trial
+          </motion.button>
+        </Link>
             </div>
         </section>
         <section className="mx-auto max-w-7xl px-4 py-20 text-center">
@@ -161,7 +163,39 @@
         ))}
     </div>
     </section>
+    {/* call to action */}
+<section className=" text-gray-900 dark:text-gray-100 
+                    bg-gradient-to-r from-blue-50 to-blue-100 
+                    dark:bg-gray-900 dark:bg-none py-20 border-y  border-gray-300 dark:border-gray-700">
+      <div className="max-w-4xl mx-auto text-center px-6">
+        {/* Heading */}
+        <h1 className="text-3xl md:text-4xl font-extrabold text-gray-900 dark:text-gray-100 mb-4">
+          CTA Call To Action
+        </h1>
 
+        {/* Subtitle */}
+        <p className="text-lg md:text-xl text-gray-900 dark:text-gray-100 mb-8">
+          Start your <span className="font-semibold text-[#2080bd]">free trial</span> today with
+          <span className="font-bold text-[#2080bd]"><br /> FairForce CRM</span> and
+          experience smarter business management.
+        </p>
+
+        {/* Button */}
+        <Link to="/auth/signin">
+          <motion.button
+            whileHover={{ scale: 1.05 }}
+            whileTap={{ scale: 0.95 }}
+            className="px-8 py-3 text-lg font-medium rounded-2xl shadow-md
+                       bg-[#2080bd] text-white 
+                       hover:bg-transparent hover:text-[#2080bd] hover:border-[#2080bd]
+                       border border-transparent
+                       transition-all duration-300"
+          >
+             Start Free Trial
+          </motion.button>
+        </Link>
+      </div>
+    </section>
 
         </div>
     );

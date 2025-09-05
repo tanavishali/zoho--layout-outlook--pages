@@ -29,7 +29,7 @@ const Sidebar = ({ open, setOpen }) => {
               Process Management
             </Link>
              <Link to="crm-essential" className="hover:bg-gray-600 pb-1" onClick={() => setOpen(false)}>
-crm-exxential            </Link>
+crm-essential            </Link>
           </nav>
         </div>
 
