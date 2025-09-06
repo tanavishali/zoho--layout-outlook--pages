@@ -22,8 +22,11 @@ let num=[1,2,3,4,5,6,7,8,9];
        {sidebarVariants.map((value, index) => (
     <ul key={index} className="">
       <li>
-        {value.icon}
-        <span>{value.label}</span>
+        <Link to={value.path} className="flex items-center space-x-2 bg-amber-400 pb-1">
+          <span>{value.icon}</span>
+          <span>{value.label}</span>
+        </Link>
+       
       </li>
     </ul>
   ))}
